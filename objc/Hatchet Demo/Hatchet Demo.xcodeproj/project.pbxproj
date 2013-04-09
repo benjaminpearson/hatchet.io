@@ -1,0 +1,345 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B52A8F501711ADC8005B9BAB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52A8F4F1711ADC8005B9BAB /* UIKit.framework */; };
+		B52A8F521711ADC8005B9BAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52A8F511711ADC8005B9BAB /* Foundation.framework */; };
+		B52A8F541711ADC8005B9BAB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52A8F531711ADC8005B9BAB /* CoreGraphics.framework */; };
+		B52A8F5A1711ADC8005B9BAB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B52A8F581711ADC8005B9BAB /* InfoPlist.strings */; };
+		B52A8F5C1711ADC8005B9BAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B52A8F5B1711ADC8005B9BAB /* main.m */; };
+		B52A8F601711ADC8005B9BAB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B52A8F5F1711ADC8005B9BAB /* AppDelegate.m */; };
+		B52A8F621711ADC8005B9BAB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B52A8F611711ADC8005B9BAB /* Default.png */; };
+		B52A8F641711ADC8005B9BAB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B52A8F631711ADC8005B9BAB /* Default@2x.png */; };
+		B52A8F661711ADC8005B9BAB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B52A8F651711ADC8005B9BAB /* Default-568h@2x.png */; };
+		B52A8F7A1711AE64005B9BAB /* Hatchet.m in Sources */ = {isa = PBXBuildFile; fileRef = B52A8F701711AE64005B9BAB /* Hatchet.m */; };
+		B52A8F7B1711AE64005B9BAB /* HatchetPublisher.m in Sources */ = {isa = PBXBuildFile; fileRef = B52A8F721711AE64005B9BAB /* HatchetPublisher.m */; };
+		B52A8F7C1711AE64005B9BAB /* HatchetSubscriber.m in Sources */ = {isa = PBXBuildFile; fileRef = B52A8F741711AE64005B9BAB /* HatchetSubscriber.m */; };
+		B52A8F871711B228005B9BAB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52A8F861711B228005B9BAB /* CFNetwork.framework */; };
+		B5CC2F861714474800A257BC /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CC2F7F1714474800A257BC /* AsyncSocket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B5CC2F871714474800A257BC /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CC2F811714474800A257BC /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B5CC2F881714474800A257BC /* SocketIoClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CC2F831714474800A257BC /* SocketIoClient.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B5CC2F891714474800A257BC /* WebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CC2F851714474800A257BC /* WebSocket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B52A8F4B1711ADC8005B9BAB /* Hatchet Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hatchet Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B52A8F4F1711ADC8005B9BAB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B52A8F511711ADC8005B9BAB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B52A8F531711ADC8005B9BAB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B52A8F571711ADC8005B9BAB /* Hatchet Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Hatchet Demo-Info.plist"; sourceTree = "<group>"; };
+		B52A8F591711ADC8005B9BAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B52A8F5B1711ADC8005B9BAB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B52A8F5D1711ADC8005B9BAB /* Hatchet Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hatchet Demo-Prefix.pch"; sourceTree = "<group>"; };
+		B52A8F5E1711ADC8005B9BAB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B52A8F5F1711ADC8005B9BAB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B52A8F611711ADC8005B9BAB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		B52A8F631711ADC8005B9BAB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		B52A8F651711ADC8005B9BAB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B52A8F6F1711AE64005B9BAB /* Hatchet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Hatchet.h; path = ../Hatchet.h; sourceTree = "<group>"; };
+		B52A8F701711AE64005B9BAB /* Hatchet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Hatchet.m; path = ../Hatchet.m; sourceTree = "<group>"; };
+		B52A8F711711AE64005B9BAB /* HatchetPublisher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HatchetPublisher.h; path = ../HatchetPublisher.h; sourceTree = "<group>"; };
+		B52A8F721711AE64005B9BAB /* HatchetPublisher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HatchetPublisher.m; path = ../HatchetPublisher.m; sourceTree = "<group>"; };
+		B52A8F731711AE64005B9BAB /* HatchetSubscriber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HatchetSubscriber.h; path = ../HatchetSubscriber.h; sourceTree = "<group>"; };
+		B52A8F741711AE64005B9BAB /* HatchetSubscriber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HatchetSubscriber.m; path = ../HatchetSubscriber.m; sourceTree = "<group>"; };
+		B52A8F861711B228005B9BAB /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B5CC2F7E1714474800A257BC /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		B5CC2F7F1714474800A257BC /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		B5CC2F801714474800A257BC /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		B5CC2F811714474800A257BC /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		B5CC2F821714474800A257BC /* SocketIoClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIoClient.h; sourceTree = "<group>"; };
+		B5CC2F831714474800A257BC /* SocketIoClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIoClient.m; sourceTree = "<group>"; };
+		B5CC2F841714474800A257BC /* WebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocket.h; sourceTree = "<group>"; };
+		B5CC2F851714474800A257BC /* WebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebSocket.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B52A8F481711ADC8005B9BAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B52A8F871711B228005B9BAB /* CFNetwork.framework in Frameworks */,
+				B52A8F501711ADC8005B9BAB /* UIKit.framework in Frameworks */,
+				B52A8F521711ADC8005B9BAB /* Foundation.framework in Frameworks */,
+				B52A8F541711ADC8005B9BAB /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B52A8F401711ADC8005B9BAB = {
+			isa = PBXGroup;
+			children = (
+				B52A8F6C1711ADCF005B9BAB /* Hatchet Library */,
+				B52A8F551711ADC8005B9BAB /* Hatchet Demo */,
+				B52A8F4E1711ADC8005B9BAB /* Frameworks */,
+				B52A8F4C1711ADC8005B9BAB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B52A8F4C1711ADC8005B9BAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B52A8F4B1711ADC8005B9BAB /* Hatchet Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B52A8F4E1711ADC8005B9BAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B52A8F861711B228005B9BAB /* CFNetwork.framework */,
+				B52A8F4F1711ADC8005B9BAB /* UIKit.framework */,
+				B52A8F511711ADC8005B9BAB /* Foundation.framework */,
+				B52A8F531711ADC8005B9BAB /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B52A8F551711ADC8005B9BAB /* Hatchet Demo */ = {
+			isa = PBXGroup;
+			children = (
+				B52A8F5E1711ADC8005B9BAB /* AppDelegate.h */,
+				B52A8F5F1711ADC8005B9BAB /* AppDelegate.m */,
+				B52A8F561711ADC8005B9BAB /* Supporting Files */,
+			);
+			path = "Hatchet Demo";
+			sourceTree = "<group>";
+		};
+		B52A8F561711ADC8005B9BAB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B52A8F571711ADC8005B9BAB /* Hatchet Demo-Info.plist */,
+				B52A8F581711ADC8005B9BAB /* InfoPlist.strings */,
+				B52A8F5B1711ADC8005B9BAB /* main.m */,
+				B52A8F5D1711ADC8005B9BAB /* Hatchet Demo-Prefix.pch */,
+				B52A8F611711ADC8005B9BAB /* Default.png */,
+				B52A8F631711ADC8005B9BAB /* Default@2x.png */,
+				B52A8F651711ADC8005B9BAB /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B52A8F6C1711ADCF005B9BAB /* Hatchet Library */ = {
+			isa = PBXGroup;
+			children = (
+				B52A8F6F1711AE64005B9BAB /* Hatchet.h */,
+				B52A8F701711AE64005B9BAB /* Hatchet.m */,
+				B52A8F711711AE64005B9BAB /* HatchetPublisher.h */,
+				B52A8F721711AE64005B9BAB /* HatchetPublisher.m */,
+				B52A8F731711AE64005B9BAB /* HatchetSubscriber.h */,
+				B52A8F741711AE64005B9BAB /* HatchetSubscriber.m */,
+				B5CC2F7D1714474800A257BC /* Support */,
+			);
+			name = "Hatchet Library";
+			sourceTree = "<group>";
+		};
+		B5CC2F7D1714474800A257BC /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				B5CC2F7E1714474800A257BC /* AsyncSocket.h */,
+				B5CC2F7F1714474800A257BC /* AsyncSocket.m */,
+				B5CC2F801714474800A257BC /* JSONKit.h */,
+				B5CC2F811714474800A257BC /* JSONKit.m */,
+				B5CC2F821714474800A257BC /* SocketIoClient.h */,
+				B5CC2F831714474800A257BC /* SocketIoClient.m */,
+				B5CC2F841714474800A257BC /* WebSocket.h */,
+				B5CC2F851714474800A257BC /* WebSocket.m */,
+			);
+			name = Support;
+			path = ../Support;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B52A8F4A1711ADC8005B9BAB /* Hatchet Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B52A8F691711ADC8005B9BAB /* Build configuration list for PBXNativeTarget "Hatchet Demo" */;
+			buildPhases = (
+				B52A8F471711ADC8005B9BAB /* Sources */,
+				B52A8F481711ADC8005B9BAB /* Frameworks */,
+				B52A8F491711ADC8005B9BAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hatchet Demo";
+			productName = "Hatchet Demo";
+			productReference = B52A8F4B1711ADC8005B9BAB /* Hatchet Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B52A8F421711ADC8005B9BAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Inlight Media";
+			};
+			buildConfigurationList = B52A8F451711ADC8005B9BAB /* Build configuration list for PBXProject "Hatchet Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B52A8F401711ADC8005B9BAB;
+			productRefGroup = B52A8F4C1711ADC8005B9BAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B52A8F4A1711ADC8005B9BAB /* Hatchet Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B52A8F491711ADC8005B9BAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B52A8F5A1711ADC8005B9BAB /* InfoPlist.strings in Resources */,
+				B52A8F621711ADC8005B9BAB /* Default.png in Resources */,
+				B52A8F641711ADC8005B9BAB /* Default@2x.png in Resources */,
+				B52A8F661711ADC8005B9BAB /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B52A8F471711ADC8005B9BAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B52A8F5C1711ADC8005B9BAB /* main.m in Sources */,
+				B52A8F601711ADC8005B9BAB /* AppDelegate.m in Sources */,
+				B52A8F7A1711AE64005B9BAB /* Hatchet.m in Sources */,
+				B52A8F7B1711AE64005B9BAB /* HatchetPublisher.m in Sources */,
+				B52A8F7C1711AE64005B9BAB /* HatchetSubscriber.m in Sources */,
+				B5CC2F861714474800A257BC /* AsyncSocket.m in Sources */,
+				B5CC2F871714474800A257BC /* JSONKit.m in Sources */,
+				B5CC2F881714474800A257BC /* SocketIoClient.m in Sources */,
+				B5CC2F891714474800A257BC /* WebSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B52A8F581711ADC8005B9BAB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B52A8F591711ADC8005B9BAB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B52A8F671711ADC8005B9BAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B52A8F681711ADC8005B9BAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B52A8F6A1711ADC8005B9BAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hatchet Demo/Hatchet Demo-Prefix.pch";
+				INFOPLIST_FILE = "Hatchet Demo/Hatchet Demo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B52A8F6B1711ADC8005B9BAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hatchet Demo/Hatchet Demo-Prefix.pch";
+				INFOPLIST_FILE = "Hatchet Demo/Hatchet Demo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B52A8F451711ADC8005B9BAB /* Build configuration list for PBXProject "Hatchet Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B52A8F671711ADC8005B9BAB /* Debug */,
+				B52A8F681711ADC8005B9BAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B52A8F691711ADC8005B9BAB /* Build configuration list for PBXNativeTarget "Hatchet Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B52A8F6A1711ADC8005B9BAB /* Debug */,
+				B52A8F6B1711ADC8005B9BAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B52A8F421711ADC8005B9BAB /* Project object */;
+}

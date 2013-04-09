@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title></title>
+	<script src="http://cdn.hatchet.io/0.0.1/socket.io.min.js"></script>
+	<script src="http://cdn.hatchet.io/0.0.1/hatchet.io.min.js"></script>
+	<script>
+		var subscriber = window.hatchet.subscriber('demo', 'sub-token', { log: true });
+
+		subscriber.watch('prev', function(data) {
+			console.log('prev');
+		});
+
+		subscriber.watch('next', function(data) {
+			console.log('next');
+		});
+	</script>
+</head>
+<body>
+</body>
+</html>

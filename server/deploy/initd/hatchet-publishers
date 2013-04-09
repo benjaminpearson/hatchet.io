@@ -1,0 +1,44 @@
+#!/bin/sh
+#
+# Simple Hatchet init.d script conceived to work on Linux systems
+# as it does use of the /proc filesystem.
+
+SCRIPT=/var/www/hatchet/publishers.js
+RETVAL=0
+
+start() {
+    echo -n "Starting Hatchet Publishers..."
+    NODE_ENV=production forever start $SCRIPT
+    return $RETVAL
+}
+
+stop() {
+    echo -n "Shutting down Hatchet Publishers..."
+    NODE_ENV=production forever stop $SCRIPT
+    return $RETVAL
+}
+
+restart() {
+    echo -n "Restarting Hatchet Publishers..."
+    NODE_ENV=production forever restart $SCRIPT
+    return $RETVAL
+}
+
+
+# See how we were called.
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    restart)
+        restart
+        ;;
+    *)
+        echo $"Usage: Hatchet Publishers {start|stop|restart}"
+        RETVAL=1
+esac
+
+exit $RETVAL

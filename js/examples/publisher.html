@@ -1,0 +1,16 @@
+<html>
+<head>
+	<title></title>
+	<script src="http://cdn.hatchet.io/0.0.1/socket.io.min.js"></script>
+	<script src="http://cdn.hatchet.io/0.0.1/hatchet.io.min.js"></script>
+	<script>
+		var publisher = window.hatchet.publisher('demo', 'pub-token', { log: true });
+		setInterval(function() {
+			publisher.send('next', { foo: 'bar' });
+		}, 1000);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

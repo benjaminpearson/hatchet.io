@@ -1,0 +1,33 @@
+{
+  "name": "hatchet.io",
+  "version": "0.0.5",
+  "description": "Hosted socket.io service with a simple API for sending and receiving messages.",
+  "homepage": "https://github.com/benjaminpearson/hatchet.io-node",
+  "author": {
+    "name": "Ben Pearson",
+    "url": "http://hatchet.io"
+  },
+  "bugs": {
+    "url": "https://github.com/benjaminpearson/hatchet.io-node/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/benjaminpearson/hatchet.io-node.git"
+  },
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/benjaminpearson/hatchet.io-node/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "socket.io-client": "~0.9.11"
+  }
+}
