@@ -10,15 +10,21 @@ When creating the instance your security group will need to have ports 80, 5223 
 
 Once you have the AWS Image running ssh in using these credentials:
 
+```
 User: hatchet
 Password: rKCDWdvTmzboAEkZpZDgOk0HI0FQaxQsXYWv
+```
 
 Straight up, change the password with `passwd` command.
 
 Then run:
 
+```
 sudo /etc/init.d/hatchet-rest start
 sudo /etc/init.d/hatchet-publishers start
 sudo /etc/init.d/hatchet-subscribers start
+```
 
-That's it on the box. You can assign an Elastic IP and domain name to it. Then head on over to http://hatchet.io - enter your domain/ip in the "Host" input and you can begin managing your instance.
+That's it on the box. You can assign an Elastic IP and domain name to it. 
+
+Then head on over to http://hatchet.io - enter your domain/ip in the "Host" input and you can begin managing your instance.
