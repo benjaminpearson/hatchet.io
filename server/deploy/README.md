@@ -4,9 +4,13 @@ Hatchet can be deployed to most VPS infrastructures. For simplicity we'll focus 
 
 You can get started quickly using the AWS Image provided that gives you a Single Server implementation of Hatchet. Although this somewhat defeats the purpose as Hatchet is designed to use a separate Redis server, etc so that it can be scaled to a network of machines easily. For a multi machine implementation feel free to contact us at Inlight Media (ben@inlight.com.au).
 
+Here's a 4 minute video of the below steps: https://vimeo.com/63742246
+
 Search the Amazon public marketplace for "hatchet.io-single".
 
-When creating the instance your security group will need to have ports 80, 5223 and 5224 open to all.
+Assign an Elastic IP
+
+Update Security Group to open ports 80, 5223 and 5224 open to all.
 
 Once you have the AWS Image running ssh in using these credentials:
 
