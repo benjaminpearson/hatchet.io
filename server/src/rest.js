@@ -116,13 +116,13 @@ app.post('/message', function(req, res) {
 			return;
 		}
 
-		if (!(perms.indexOf('*') == -1 && perms.indexOf(params.data.event) == -1)) {
+		if (perms.indexOf('*') == -1 && perms.indexOf(params.data.event) == -1) {
 			res.json({ status: false, err: constants.res.AUTH_INVALID_PERMS });
 			return;
 		}
 
-		pubsub.publish(params.auth.channel, data);
-		stats.publisher('message', socket);
+		pubsub.publish(params.auth.channel, JSON.stringify(params.data));
+		//stats.publisher('message', socket);
 
 		res.json({ status: true });
 	});
