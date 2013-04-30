@@ -1,0 +1,16 @@
+//
+// Prefix header for all source files of the 'Hatchet' target in the 'Hatchet' project
+//
+
+#ifdef __OBJC__
+
+#import "AsyncSocket.h"
+#import "JSONKit.h"
+#import "SocketIoClient.h"
+#import "WebSocket.h"
+
+#import "Hatchet.h"
+#import "HatchetPublisher.h"
+#import "HatchetSubscriber.h"
+
+#endif

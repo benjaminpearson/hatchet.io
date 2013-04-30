@@ -5,8 +5,6 @@
 //  Copyright (c) 2013 Inlight Media. All rights reserved.
 //
 
-#import "SocketIoClient.h"
-
 typedef enum {
 	HatchetStateConnected = 1,
 	HatchetStateDisconnected = 2,

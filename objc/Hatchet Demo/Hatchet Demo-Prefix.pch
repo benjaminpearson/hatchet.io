@@ -11,4 +11,13 @@
 #ifdef __OBJC__
 	#import <UIKit/UIKit.h>
 	#import <Foundation/Foundation.h>
+
+	#import "AsyncSocket.h"
+	#import "JSONKit.h"
+	#import "SocketIoClient.h"
+	#import "WebSocket.h"
+
+	#import "Hatchet.h"
+	#import "HatchetPublisher.h"
+	#import "HatchetSubscriber.h"
 #endif

@@ -15,10 +15,10 @@
 
 @dynamic delegate;
 
-- (id)init {
+- (id)initWithHost:(NSString *)hostName {
 	if ((self = [super init])) {
 		_watching = [[NSMutableArray alloc] init];
-		_socket = [[SocketIoClient alloc] initWithHost:@"api.hatchet.io" port:5223];
+		_socket = [[SocketIoClient alloc] initWithHost:hostName port:5223];
 		_socket.secureConnection = FALSE;
 		_socket.delegate = self;
 	}

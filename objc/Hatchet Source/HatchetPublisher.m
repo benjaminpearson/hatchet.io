@@ -17,9 +17,9 @@
 
 @dynamic delegate;
 
-- (id)init {
+- (id)initWithHost:(NSString *)hostName {
 	if ((self = [super init])) {
-		_socket = [[SocketIoClient alloc] initWithHost:@"api.hatchet.io" port:5224];
+		_socket = [[SocketIoClient alloc] initWithHost:hostName port:5224];
 		_socket.secureConnection = FALSE;
 		_socket.delegate = self;
 	}

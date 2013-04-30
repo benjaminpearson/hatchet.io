@@ -12,6 +12,8 @@
 	NSString *_alias;
 }
 
+- (id)initWithHost:(NSString *)hostName;
+
 - (void)watch:(NSString *)event;
 - (void)unwatch:(NSString *)event;
 - (void)alias:(NSString *)alias;

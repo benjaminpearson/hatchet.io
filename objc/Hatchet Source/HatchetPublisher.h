@@ -11,6 +11,8 @@
 
 }
 
+- (id)initWithHost:(NSString *)hostName;
+
 - (void)broadcast:(NSString *)event data:(NSDictionary *)data;
 - (void)send:(NSString *)event target:(NSString *)target data:(NSDictionary *)data;
 - (void)once:(NSString *)event data:(NSDictionary *)data;
