@@ -12,6 +12,16 @@ More documentation coming soon. Bootstrappin at the moment.
 
 ## Examples
 
+## HTTP POST Request
+
+You can send messages to connected subscribers by simply POSTing JSON data to a URL. See the example below. This means you can integrate Hatchet into your Ruby, PHP, Java, etc projects without needing to write a line of NodeJS code.
+
+### Sending Messages (Publisher)
+
+```bash
+curl -v -H "Content-Type: application/json" -X POST -d '{ "auth": { "channel": "demo", "secret": "pub-token" }, "data": { "event": "log", "data": { "line": 100, "file": "test.js" } }}' http://api.hatchet.io/message
+```
+
 ## NodeJS NPM Module
 
 Install the module with: `npm install hatchet.io`
@@ -78,6 +88,33 @@ setInterval(function() {
 	}
 }
 ```
+
+## Objective C
+
+### Receiving Messages (Subscriber)
+
+```objective-c
+HatchetSubscriber *subscriber = [[HatchetSubscriber alloc] init];
+subscriber.delegate = self;
+[subscriber auth:@"demo" secret:@"sub-token"];
+[subscriber watch:@"log"];
+...
+- (void)hatchetEvent:(NSString *)event data:(NSDictionary *)data {
+  NSLog(@"Event: %@ Data: %@", event, data);
+}
+```
+
+### Sending Messages (Publisher)
+
+```objective-c
+HatchetPublisher *publisher = [[HatchetPublisher alloc] init];
+publisher.delegate = self;
+[publisher auth:@"demo" secret:@"pub-token"];
+[publisher broadcast:@"log" data:@{
+  @"line": @(100),
+  @"file": @"Hatchet.m"
+}];
+````
 
 ## Contributing
 Please feel free to contribute. If you see any areas for improvement, particularly in regards to performance / reliability / security it'd be great to receive your pull requests / comments because it's really the main crux of the application.
