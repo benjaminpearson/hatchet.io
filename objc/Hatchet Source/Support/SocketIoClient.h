@@ -2,9 +2,9 @@
 //	SocketIoClient.h
 //	SocketIoCocoa
 //
-//	Created by Fred Potter on 11/11/10.
-//	Copyright 2010 Fred Potter. All rights reserved.
-//
+//	Heavily based on:
+//	https://github.com/fpotter/socketio-cocoa
+//	https://github.com/pkyeck/socket.IO-objc (This library is more maintained and might be worth switching to)
 
 #import <Foundation/Foundation.h>
 
@@ -20,7 +20,7 @@ typedef enum {
 	SocketIoMessageTypeEvent,
 	SocketIoMessageTypeACK,
 	SocketIoMessageTypeError,
-	SocketIoMessageTypeNoop,	
+	SocketIoMessageTypeNoop,
 } SocketIoMessageType;
 
 typedef enum {
@@ -37,26 +37,26 @@ typedef enum {
 	BOOL _tryAgainOnConnectTimeout;
 
 	NSTimeInterval _heartbeatTimeout;
-	NSTimeInterval _heartbeatIntervalPadding;	
+	NSTimeInterval _heartbeatIntervalPadding;
 
 	NSTimer *_timeout;
 
 	BOOL _isConnected;
 	BOOL _isConnecting;
-	
+
 	NSString *_sessionId;
 	NSString *_transport;
 
 	id<SocketIoClientDelegate> _delegate;
 
 	NSMutableArray *_queue;
-	
+
 	NSUInteger _ackCount;
 	NSMutableDictionary *_ackCallbacks;
-	
+
 	int _connectRetries;
 	int _maxConnectRetries;
-	
+
 	BOOL _secureConnection;
 }
 
