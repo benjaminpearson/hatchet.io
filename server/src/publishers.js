@@ -8,6 +8,7 @@ var constants = require('./lib/constants');
 
 var publishers = require('socket.io').listen(config.core.socket.publishers.port);
 publishers.set('log level', config.core.socket.publishers.logLevel);
+publishers.set('close timeout', config.core.socket.publishers.closeTimeout);
 
 // Setup Publishers Socket
 publishers.sockets.on(constants.events.CONNECT, function (socket) {

@@ -11,6 +11,7 @@ var constants = require('./lib/constants');
 
 var subscribers = require('socket.io').listen(config.core.socket.subscribers.port);
 subscribers.set('log level', config.core.socket.subscribers.logLevel);
+subscribers.set('close timeout', config.core.socket.subscribers.closeTimeout);
 
 var channels = [];
 
