@@ -119,6 +119,7 @@
 
 - (void)disconnect {
 	//Begin Disconnection Process
+	[NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(checkIfConnected) object:nil];
 	[self send:nil type:SocketIoMessageTypeDisconnect ack:nil];
 	[_webSocket close];
 	[self onDisconnect];
