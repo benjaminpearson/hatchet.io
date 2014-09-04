@@ -4,7 +4,7 @@ Realtime server and client library built on Socket.IO. Simple to setup and strai
 
 ## Getting Started
 
-Checkout http://hatchet.io for more info.
+Checkout http://hatchet.io.s3-website-ap-southeast-2.amazonaws.com/ for more info.
 
 ## Documentation
 
